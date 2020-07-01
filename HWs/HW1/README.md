@@ -1,6 +1,6 @@
 Analysis of Windows Event Logs using pandas DataFrame
 
-# Analysis of Windows Event Logs
+# Windows Event Logs
 Сетевая среда большинства организаций включает серверы и рабочие станции под управлением операционной системы Windows. На серверах и рабочих станциях под управлением ОС Windows NT, XP, 2000 и 2003 используются журналы в формате EVT, а в ОС Windows Vista. 
 
 ---

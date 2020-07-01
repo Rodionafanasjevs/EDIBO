@@ -1,2 +1,10 @@
-Uzdevuma apraksts
-Analysis of Windows Event Logs using pandas  DataFrame
+Analysis of Windows Event Logs using pandas DataFrame
+
+# Analysis of Windows Event Logs - Сетевая среда большинства организаций включает серверы и рабочие станции под управлением операционной системы Windows. Журналы событий генерируются в форматах EVT и EVTX. На серверах и рабочих станциях под управлением ОС Windows NT, XP, 2000 и 2003 используются журналы в формате EVT, а в ОС Windows Vista и Server 2008 — журналы в формате EVTX. 
+---
+## Библиотека pandas предоставляет две структуры: Series и DataFrame для быстрой и удобной работы с данными. DataFrame – это двумерная маркированная структура. Идейно она очень похожа на обычную таблицу, что выражается в способе ее создания и работе с ее элементами. Конструктор класса DataFrame выглядит так:
+class pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
+
+## data – массив ndarray, словарь (dict) или другой DataFrame; index – список меток для записей (имена строк таблицы); columns – список меток для полей (имена столбцов таблицы); dtype – объект numpy.dtype, определяющий тип данных; copy – создает копию массива данных, если параметр равен True в ином случае ничего не делает.
+
+## Структуру DataFrame можно создать на базе: словаря (dict) в качестве элементов которого должны выступать: одномерные ndarray, списки, другие словари, структуры Series; двумерные ndarray; структуры Series; структурированные ndarray; другие DataFrame.

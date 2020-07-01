@@ -17,4 +17,10 @@ DataFrame(data=None, index=None, columns=None, dtype=None, copy=False)
 ---
 
 ## Структуру DataFrame можно создать на базе: 
-словаря (dict) в качестве элементов которого должны выступать: одномерные ndarray, списки, другие словари, структуры Series; двумерные ndarray; структуры Series; структурированные ndarray; другие DataFrame.
+Cловаря (dict) в качестве элементов которого должны выступать: 
+  * одномерные ndarray, 
+  * списки, другие словари, структуры Series; 
+  * двумерные ndarray; 
+  * структуры Series; 
+  * структурированные ndarray; 
+  * другие DataFrame.

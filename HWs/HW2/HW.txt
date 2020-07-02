@@ -13,6 +13,6 @@ Restart your machine to complete the WSL install and update to WSL 2.
 ---
 #Install your Linux distribution of choice
   * Open the Microsoft Store and select your favorite Linux distribution.
-(https://docs.microsoft.com/en-us/windows/wsl/media/store.png)
+![Microsoft Store](https://docs.microsoft.com/en-us/windows/wsl/media/store.png)
 
 [main site](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

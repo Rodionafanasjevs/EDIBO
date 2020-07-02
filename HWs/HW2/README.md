@@ -23,7 +23,7 @@ Restart your machine to complete the WSL install and update to WSL 2.
 ---
 # Set up a new distribution
 The first time you launch a newly installed Linux distribution, a console window will open and you'll be asked to wait for a minute or two for files to de-compress and be stored on your PC. All future launches should take less than a second. You will then need to create a user account and password for your new Linux distribution.
-![alt text]https://docs.microsoft.com/en-us/windows/wsl/media/ubuntuinstall.png
+![alt text](https://docs.microsoft.com/en-us/windows/wsl/media/ubuntuinstall.png)
 
 ---
 # Set your distribution version to WSL 1 or WSL 2

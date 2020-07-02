@@ -1,2 +1,13 @@
-1. Linux for windows
+Hometask. Linux for windows.
+#Install the Windows Subsystem for Linux
+Before installing any Linux distributions on Windows, you must enable the "Windows Subsystem for Linux" optional feature.
+To only install WSL 1, you should now restart your machine and move on to Install your Linux distribution of choice, otherwise wait to restart and move on to update to WSL 2. Read more about Comparing WSL 2 and WSL 1.
+#Update to WSL 2
+To update to WSL 2, you must meet the following criteria:
+  1.Running Windows 10, updated to version 2004, Build 19041 or higher.
+  2.Check your Windows version by selecting the Windows logo key + R, type winver, select OK. (Or enter the ver command in Windows Command Prompt). Please update to the latest Windows version if your build is lower than 19041. Get Windows Update Assistant.
+Enable the 'Virtual Machine Platform' optional component
+Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.
+
+
 [main site](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

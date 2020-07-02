@@ -1,5 +1,6 @@
 Hometask. Linux for windows.
 # Install the Windows Subsystem for Linux
+
 Before installing any Linux distributions on Windows, you must enable the "Windows Subsystem for Linux" optional feature.
 To only install WSL 1, you should now restart your machine and move on to Install your Linux distribution of choice, otherwise wait to restart and move on to update to WSL 2.
 ---

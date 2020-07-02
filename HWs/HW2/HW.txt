@@ -10,5 +10,9 @@ To update to WSL 2, you must meet the following criteria:
 Enable the 'Virtual Machine Platform' optional component
 Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.
 Restart your machine to complete the WSL install and update to WSL 2.
+---
+#Install your Linux distribution of choice
+  * Open the Microsoft Store and select your favorite Linux distribution.
+(https://docs.microsoft.com/en-us/windows/wsl/media/store.png)
 
 [main site](https://docs.microsoft.com/en-us/windows/wsl/install-win10)

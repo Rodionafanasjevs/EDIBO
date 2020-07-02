@@ -5,8 +5,8 @@ To only install WSL 1, you should now restart your machine and move on to Instal
 ---
 # Update to WSL 2
 To update to WSL 2, you must meet the following criteria:
-  1.Running Windows 10, updated to version 2004, Build 19041 or higher.
-  2.Check your Windows version by selecting the Windows logo key + R, type winver, select OK. (Or enter the ver command in Windows Command Prompt). Please update to the latest Windows version if your build is lower than 19041.
+  * Running Windows 10, updated to version 2004, Build 19041 or higher.
+  * Check your Windows version by selecting the Windows logo key + R, type winver, select OK. (Or enter the ver command in Windows Command Prompt). Please update to the latest Windows version if your build is lower than 19041.
 Enable the 'Virtual Machine Platform' optional component
 Before installing WSL 2, you must enable the "Virtual Machine Platform" optional feature.
 Restart your machine to complete the WSL install and update to WSL 2.

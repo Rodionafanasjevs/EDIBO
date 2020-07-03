@@ -37,6 +37,7 @@ When you’ve found the Total Commander on windows store, you’ll see the name 
 Click the button and the installation will begin. Then you can click Open when it’s complete.
 
 If you’ve already installed the app on another machine, it may say Install instead.
+
 ---
 [Total commander](https://windows-1.com/total-commander-for-pc/)
 

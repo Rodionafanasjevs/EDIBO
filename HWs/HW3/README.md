@@ -1,4 +1,3 @@
-# Total commander
 # Total Commander Windows 10 App 
 Efficient file manager with support of 2 tabs to replace the default windows file explorer. Now, Christian Ghisler has develop this File Manager software for PC. Get the latest version of Total Commander for free.
 
@@ -18,6 +17,29 @@ Please note: you should download and install programs only from trusted publishe
   7. Now, the Total Commander icon will appear on your Desktop
   8. Click on the icon to running the Application into your windows 10 pc/laptop.
 
+---
+
+# Method 2: Installing App using Windows Store
+  Step 1 Open the Windows Store App
+
+Recommended Apps  WinCatalog for PC Windows 10 - Download Latest Version
+You can find the Windows Store at your desktop widget or at bottom in the Taskbar. It looks like a small shopping bag Icon with the Windows logo on it.
+
+Step 2: Finding the apps on Windows Store
+
+You can find the Total Commander in Windows store using search box in the top right.
+
+Or you can Select Apps if you want to explore more apps that available, according to popularity and featured apps.
+
+Note: If you don’t find this app on Windows 10 Store, you can back to Method 1
+
+Step 3: Installing the app from Windows Store
+
+When you’ve found the Total Commander on windows store, you’ll see the name and logo, followed by a button below. The button will be marked Free, if it’s a free app, or give the price if it’s paid.
+
+Click the button and the installation will begin. Then you can click Open when it’s complete.
+
+If you’ve already installed the app on another machine, it may say Install instead.
 [Total commander](https://windows-1.com/total-commander-for-pc/)
 
 ---

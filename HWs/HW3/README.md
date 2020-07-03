@@ -42,7 +42,9 @@ If you’ve already installed the app on another machine, it may say Install ins
 [Total commander](https://windows-1.com/total-commander-for-pc/)
 
 ---
+
 ---
+
 # Installing VirtualBox on Windows 10
 VirtualBox virtualization software is a free software that allows users to run multiple guest operating systems from a single computer. Using VirtualBox software, you can install additional operating systems like (Windows, Linux, Mac OS) inside that one computer.
 # Step 1: Download VirtualBox installer for Windows

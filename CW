@@ -49,3 +49,42 @@ user@epk428-17:~$ xxd -b 1.txt
 (0/1) - 2 states => inuque codes 2^8=256
 
 [tab](https://lh3.googleusercontent.com/proxy/42VsTkLRxfFPsUcO07Vm6GE6al8E2TyzHFqRplS5g-gGg_t5HnZKGm04SvKJLiwBZTElVqglk_MQ5XMZeH4CDoxVIh0XZNG0NwixDObwX0Lg-Dk)
+
+user@epk428-17:~$ hexdump  -c 1.txt
+
+user@epk428-17:~$ whereis ls
+ls: /bin/ls /usr/share/man/man1/ls.1.gz
+
+PATH=$PATH:~ delete
+PATH=$PATH:./
+ser@epk428-17:~$ echo $PATH
+/usr/local/anaconda3/bin:/opt/intelFPGA_lite/17.1/quartus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+#!/bin/bash
+mkdir DEF
+cd DEF
+touch test.txt
+cd ..
+mv DEF/test.txt ./
+
+#!/bin/bash
+mkdir DEF
+cd DEF
+touch test.txt
+cd ..
+mv DEF/test.txt ./
+cp DEF/test.txt ./test1.txt
+
+echo $PATH
+   19  ls
+   20  ls -lt
+   21  chmod 744 first_script.sh
+   22  ls -lt
+   
+   cd
+   26  git clone https://github.com/Rodionafanasjevs/EDIBO
+   27  ls
+   28  cd EDIBO
+   29  ls -lt
+   30  history
+user@epk428-17:~/EDIBO$ 

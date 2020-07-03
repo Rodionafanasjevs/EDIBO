@@ -56,4 +56,14 @@ When prompted with a message to install (Trust) Oracle Universal Serial Bus, cli
 After that, VirtualBox should be installed. When you’re done installing, open VirtualBox and install its extension pack.
 The extension pack extends the functionality of VirtualBox base packages. 
 
+# Step 2: Install VirtualBox extension pack.
+After downloading the saving he extension pack. open VirtualBox host software click File –> Preferences
+
+![VB](https://websiteforstudents.com/wp-content/uploads/2016/08/xvirtualbox-extension-pack-install.png.pagespeed.ic.s-Dixp3M-y.webp)
+
+Then select extension, click the browse button to the right to find the download extension pack. Select it, agree to the licensing terms and install.
+
+![VB](https://websiteforstudents.com/wp-content/uploads/2016/08/xvirtualbox-extension-pack-update.png.pagespeed.ic.Ek21dhF_PM.webp)
+
+When you’re done, VirtualBox software will be ready to use and install guest operating systems.
 [Virtualbox](https://websiteforstudents.com/installing-virtualbox-windows-10/)

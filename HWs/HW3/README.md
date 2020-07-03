@@ -46,6 +46,7 @@ If you’ve already installed the app on another machine, it may say Install ins
 VirtualBox virtualization software is a free software that allows users to run multiple guest operating systems from a single computer. Using VirtualBox software, you can install additional operating systems like (Windows, Linux, Mac OS) inside that one computer.
 # Step 1: Download VirtualBox installer for Windows
 After downloading, run the executable to begin installing the software. When you start the installation, you should get a prompt like the one below.
+
 ![VB](https://websiteforstudents.com/wp-content/uploads/2016/08/xvirtualbox_windows_installation.png.pagespeed.ic.KLn9rFsoEV.webp)
 
 

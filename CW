@@ -88,3 +88,7 @@ echo $PATH
    29  ls -lt
    30  history
 user@epk428-17:~/EDIBO$ 
+
+    9  echo $PS1
+   10  $PS1=$
+

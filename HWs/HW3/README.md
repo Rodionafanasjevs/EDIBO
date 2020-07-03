@@ -48,7 +48,10 @@ VirtualBox virtualization software is a free software that allows users to run m
 After downloading, run the executable to begin installing the software. When you start the installation, you should get a prompt like the one below.
 
 ![VB](https://websiteforstudents.com/wp-content/uploads/2016/08/xvirtualbox_windows_installation.png.pagespeed.ic.KLn9rFsoEV.webp)
+When prompted with a message to install (Trust) Oracle Universal Serial Bus, click Install to continue.
 
-
+![VB](https://websiteforstudents.com/wp-content/uploads/2016/08/xvirtualbox-windows-trusted-app.png.pagespeed.ic.YNimSrBCx8.webp)
+After that, VirtualBox should be installed. When you’re done installing, open VirtualBox and install its extension pack.
+The extension pack extends the functionality of VirtualBox base packages. 
 
 [Virtualbox](https://websiteforstudents.com/installing-virtualbox-windows-10/)

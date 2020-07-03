@@ -1,0 +1,51 @@
+user@epk428-17:~/Desktop$ cp 1.txt ./ABC/2.txt
+> ls
+user@epk428-17:~/Desktop$ cp 1.txt ABC/2.txt
+user@epk428-17:~/Desktop$ cp 1.txt /ABC/2.txt
+user@epk428-17:~/Desktop$ cp 1.txt 2.txt\
+> cp 1.txt 2.txt
+user@epk428-17:~/Desktop$ cp 1.txt 2.txt
+user@epk428-17:~/Desktop$ ls
+user@epk428-17:~/Desktop$ nano 2.txt
+user@epk428-17:~/Desktop$ cat 2.txt
+user@epk428-17:~/Desktop$ rm 2.txt
+user@epk428-17:~/Desktop$ rm 1.txt
+user@epk428-17:~/Desktop$ ls
+user@epk428-17:~/Desktop$ 
+or
+ 49  nano 1.txt
+   50  ls
+   51  cp 1.txt ./ABC/2.txt
+   52  cp 1.txt ABC/2.txtls
+   53  cp 1.txt ABC/2.txt
+   54  cp 1.txt /ABC/2.txt
+   55  cp 1.txt 2.txtcp 1.txt 2.txt
+   56  cp 1.txt 2.txt
+   57  ls
+   58  nano 2.txt
+   59  cat 2.txt
+   60  rm 2.txt
+   61  rm 1.txt
+   62  ls
+
+user@epk428-17:/home$ pwd
+/home
+user@epk428-17:/home$ 
+user@epk428-17:/home$ cd
+user@epk428-17:~$ 
+
+Binaru sist.
+nano 1.txt
+   77  cat 1.txt
+   78  ls -l
+   79  hexdump -c 1.txt
+   80  historey
+   81  history
+
+Ar baitu
+user@epk428-17:~$ xxd -b 1.txt
+
+1 byte = 8 bits
+(0/1) - 2 states => inuque codes 2^8=256
+
+[tab](https://lh3.googleusercontent.com/proxy/42VsTkLRxfFPsUcO07Vm6GE6al8E2TyzHFqRplS5g-gGg_t5HnZKGm04SvKJLiwBZTElVqglk_MQ5XMZeH4CDoxVIh0XZNG0NwixDObwX0Lg-Dk)

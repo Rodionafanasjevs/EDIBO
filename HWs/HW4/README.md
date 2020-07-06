@@ -12,21 +12,21 @@ The default installation location of gnuplot on Windows is C:\Program Files (x86
 # Linux
 The installation on Linux can be done through the different package managers as follows.
 
-  * Arch
+  1. Arch
 
 $ sudo pacman -S gnuplot
 
-  * Debian and Ubuntu
+  2. Debian and Ubuntu
 
 $ sudo apt-get update
 $ sudo apt-get install gnuplot
 
-  * CentOS / RedHat
+  3. CentOS / RedHat
 
 $ sudo yum check-update
 $ sudo yum install gnuplot
 
-  * Fedora
+  4. Fedora
 
 $ sudo dnf check-update
 $ sudo dns install gnuplot

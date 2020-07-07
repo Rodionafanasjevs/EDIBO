@@ -1,0 +1,4 @@
+Cntrl c - stop process all scriepts
+ip a - zaprosi na etot ip
+ping 192.168.123.1
+ping 127.0.0.1

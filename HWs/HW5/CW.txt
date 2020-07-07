@@ -4,3 +4,5 @@ ip a - zaprosi na etot ip
 ping 192.168.123.1
 ping 127.0.0.1
 ifconfig
+curl - zapros po adresu
+curl localhost:8000 -> 127.0.0.1:8000 -> (0.0.0.0:8000) - sozdali srever

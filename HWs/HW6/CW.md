@@ -60,3 +60,6 @@ number = 100
 pattern = '{movie} - {rating}'
 result = pattern.format(movie=name, rating=number)
 print(result)
+
+result = f'{name} - {number}'
+print(result)

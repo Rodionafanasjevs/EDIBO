@@ -38,3 +38,25 @@ print(s)
 #%s = string
 
 #%d = int
+
+Format:
+name = 'Wrl'
+s = 'Hi {}'
+result = s.format('0')
+print(result)
+
+r = '{}'.format(name)
+print(r)
+
+l = '{}gfhgfh  {} hfgfh {}{}'.format(0, 'hi', 'ed', 32)
+print(l)
+
+
+newstr = f'name {s} {l}'
+print(newstr)
+
+name = 'Leon'
+number = 100
+pattern = '{movie} - {rating}'
+result = pattern.format(movie=name, rating=number)
+print(result)

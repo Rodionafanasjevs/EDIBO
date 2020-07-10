@@ -2,6 +2,8 @@
 
 [Pascal's Triangle in Python](https://www.faceprep.in/python/pascal-triangle-in-python/)
 
+[PyFormat](https://pyformat.info/PyFormatPyFormat)
+
 In [191]: for i in range(5):
      ...:     print(11**i)
      ...:     

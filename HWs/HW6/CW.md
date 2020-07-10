@@ -33,5 +33,5 @@ Cieņā,
 print(s)
 
 
-# %s = string
-# %d = int
+#%s = string
+#%d = int

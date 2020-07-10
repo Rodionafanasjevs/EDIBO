@@ -34,4 +34,5 @@ print(s)
 
 
 #%s = string
+
 #%d = int

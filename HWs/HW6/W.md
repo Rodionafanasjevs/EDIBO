@@ -301,39 +301,63 @@ print(s_children)
 # Цикл For
 
 children = ['sergeev_2000', 'krukov_2002', 'Vanek_2005']
+
 for child in children:
+
      print(children)
+     
 print(child)
+
 names = []
 
 for child_name in children:
+
      surname = child_name.split('_')[0]
+     
      surname = surname.title()
 
+---
+
 for child_name in children:
+
      surname = child_name.split('_')[0]
+     
      surname = surname.title()
+     
      print(surname)
  
 Sergeev
 Krukov
 Vanek
 
+---
+
 for child_name in children:
+
      surname = child_name.split('_')[0]
+     
      names.append(surname)
+     
      print(names)
  
 ['sergeev', 'krukov', 'Vanek', 'sergeev', 'krukov', 'Vanek', 'sergeev']
 
 s = 'Hi'
+
  i = s.__iter__()
+ 
  i
 
+---
+
 for child_name in children:
+
      surname = child_name.split('_')[0]
+     
      print(surname)
+     
      break
+     
      names.append(surname)
  
 sergeev
@@ -341,9 +365,13 @@ sergeev
 ---
 
 for child_name in children:
+
      surname = child_name.split('_')[0]
+     
      print(surname)
+     
      break
+     
      names.append(surname)
  
 sergeev

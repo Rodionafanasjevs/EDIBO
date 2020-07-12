@@ -56,9 +56,6 @@ password = '123'
 ... else:
 ...     print('Wrong password')
 
-
-
-
 password = '123'
 >>> user_input = '00000'
 >>> if (user_input == password) or (2 * 2 == 4):
@@ -67,8 +64,6 @@ password = '123'
 ...     print('Wrong password')
 ... 
 Welcome
-
-
 
 s = '12345678'
 >>> 
@@ -81,8 +76,6 @@ s = '12345678'
 ... 
 Length 8
 
-
-
  if user_input == password:
 ...     if user_input == password:
 ...             print('Welcome')
@@ -91,9 +84,7 @@ Length 8
 ... else:
 ...     print('Input smth please')
 
-
-
-# 1 - 100
+... # 1 - 100
 ... # 3 - Fizz
 ... # 5 - Bazz
 ...  3 & 5 - FizzBazz

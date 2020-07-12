@@ -460,9 +460,13 @@ new = {'name': 'Dima'}
 counter = 0
 
 while True:
+
      print(counter)
+     
      if counter > 20:
+     
              break
+             
      counter += 1
  
 259978
@@ -470,5 +474,13 @@ while True:
 ---
 
  while True:
+ 
      print(counter)
      counter += 1
+
+# With
+
+open('readme.txt' ,'w')
+file = write('1')
+ file.close()
+

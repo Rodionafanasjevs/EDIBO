@@ -375,3 +375,79 @@ for child_name in children:
      names.append(surname)
  
 sergeev
+
+---
+---
+
+# Словари
+
+person = {'name': 'vasja', 'surname': 'pupkin', 'email': 'test@gmail.com'}
+
+name = person['name']
+
+ print(name)
+ 
+vasja
+
+tel = person.get('tel')
+
+ print(tel)
+ 
+None
+
+tel = d.get('tel','12312312')
+
+ print(tel)
+ 
+1234
+
+tel = person.setdefault('tel','123231')
+
+ print(tel)
+ 
+123231
+
+---
+
+for item in person.items():
+
+     print(item)
+ 
+('name', 'vasja')
+
+('surname', 'pupkin')
+
+('email', 'test@gmail.com')
+
+('tel', '123231')
+
+---
+
+ for item in person:
+     print(item)
+ 
+name
+
+surname
+
+email
+
+tel
+
+---
+
+for key, value in person.items():
+
+print(key, value)
+
+name vasja
+
+---
+
+new = {'name': 'Dima'}
+
+ person.update(new)
+ 
+ print(person)
+ 
+{'name': 'Dima', 'surname': 'pupkin', 'email': 'test@gmail.com', 'tel': '123231'}

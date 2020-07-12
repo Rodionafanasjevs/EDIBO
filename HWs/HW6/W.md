@@ -456,3 +456,19 @@ new = {'name': 'Dima'}
 ---
 
 # While
+
+counter = 0
+
+while True:
+     print(counter)
+     if counter > 20:
+             break
+     counter += 1
+ 
+259978
+
+---
+
+ while True:
+     print(counter)
+     counter += 1

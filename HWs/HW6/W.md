@@ -451,3 +451,8 @@ new = {'name': 'Dima'}
  print(person)
  
 {'name': 'Dima', 'surname': 'pupkin', 'email': 'test@gmail.com', 'tel': '123231'}
+
+---
+---
+
+# While

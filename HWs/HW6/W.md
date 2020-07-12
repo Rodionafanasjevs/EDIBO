@@ -23,6 +23,9 @@ greet('world', name='Goodbye')
 
 world, Goodbye
 
+---
+---
+
 # Local name
 def a():
 
@@ -50,7 +53,7 @@ print()
 
 a()
 
-
+---
 
 name = 'Eroha'
 
@@ -70,6 +73,9 @@ def b():
   
 a()
 
+---
+---
+
 # if,boolen, else 
 password = '123'
 
@@ -83,7 +89,7 @@ password = '123'
 
 ...     print('Wrong password')
 
-
+---
 
 password = '123'
 
@@ -99,7 +105,7 @@ password = '123'
 
 Welcome
 
-
+---
 
 s = '12345678'
 
@@ -131,6 +137,7 @@ Length 8
 
 ...     print('Input smth please')
 
+ ---
  
 ... # 1 - 100
 
@@ -157,6 +164,9 @@ def fizz_bazz(i):
 ...     else:
 
 ...             print(i)
+
+---
+---
 
 # Списки
 
@@ -190,9 +200,6 @@ rl.append(l)
 
 rl.append(l2)
 
-
-l
-
 ['a', 'b', 'c', 'd']
 
 rl =[]
@@ -219,7 +226,7 @@ l
 
 l2 = [1,2,3,4] 
 
-
+---
 
 rl.extend(l2)
 
@@ -231,8 +238,7 @@ l.append('b')
 
 l
 
-
-
+---
 
 s = 'Зайка шел гулять на речку\nперепрыгнул через речку'
 
@@ -256,7 +262,7 @@ print(children)
 
 ['sergeev_12', 'krukov_2323', 'Vanek_123']
 
-
+---
 
 def by_year(name):
 
@@ -267,7 +273,7 @@ def by_year(name):
  
 ['sergeev', '12']
 
-
+---
 
 def by_year(name):
 
@@ -277,8 +283,14 @@ def by_year(name):
  
 12
 
+---
+
 def by_year(name):
+
 return name.split('_')[-1]
+
  s_children = sorted(children, key=by_year)
->>> print(s_children)
+ 
+print(s_children)
+
 ['sergeev_12', 'Vanek_123', 'krukov_2323']

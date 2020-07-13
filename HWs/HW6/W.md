@@ -549,3 +549,62 @@ main()
 
 2
 
+---
+
+def main():
+
+     d = {'website': 'google'}
+     
+     try:
+             print(asdf)
+             
+             data = d['url']
+             
+     except KeyError:
+     
+             data = 'https://'
+             
+     except Exception:
+     
+     ---
+     
+     def main():
+     
+     d = {'website': 'google'}
+
+     try:
+             print(asdf)
+             data = d['url']
+     except:
+             data = 'https://'
+             print('Inside except', data)
+             return data
+     else:
+             pass
+
+result = main()
+
+Inside except https://
+
+main()
+Inside except https://
+
+'https://'
+
+---
+
+             print('oops')
+             
+     finally:
+     
+             print('Very important action')
+ 
+
+result = main()
+
+oops
+
+Very important action
+
+# Import mod.
+

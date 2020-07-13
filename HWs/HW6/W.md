@@ -532,3 +532,20 @@ def print_wrapper(text):
  
  print_wrapper(1)
 
+def main():
+
+     data = {'website': 'google'}
+    
+     try:
+     
+             print(data['url'])
+             
+     except:
+             summ = 1 + 1
+             
+             print(summ)
+
+main()
+
+2
+

@@ -484,3 +484,51 @@ open('readme.txt' ,'w')
 file = write('1')
  file.close()
 
+def get_salt_mass(m):
+
+     return m * 15 / 1000
+     
+def get_pepper_mass(m):
+
+     return m * 5 / 1000
+     
+print(get_salt_mass(1500))
+
+22.5
+
+ingredients = {
+
+     'salt': 15,
+     
+     'pepper': 5
+     
+ }
+
+def get_salt_mass(m):
+
+     return m * 15 / 1000
+ 
+ def get_pepper_mass(m):
+ 
+     return m * 5 / 1000
+ 
+ def get_ingredient_mass(m, ingr)
+ 
+     return m * ingredients.get(ingr,0) / 1000
+ 
+ print(get_salt_mass(1500))
+ 
+22.5
+
+print(get_ingredient_mass(1500, 'cinnamon'))
+
+0.0
+
+def print_wrapper(text):
+
+     with open('readme', 'a') as f:
+     
+             print(text, file=f)
+ 
+ print_wrapper(1)
+

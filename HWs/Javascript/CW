@@ -1,0 +1,36 @@
+# Javascript
+
+var x = 5;
+var y = 10;
+var z = x + y;
+alert(z);
+
+firstName = "John"
+lastName = "Doe"
+age = 35
+
+
+var firstName = "John",
+lastName = "Doe",
+age =  35
+
+function myFunction() {return"Hello";}
+document.getElementById("demo").innerHTML = myFunction();
+
+let obj = {}undefined
+obj
+{}
+obj.name = 'John'
+"John"
+obj
+{name: "John"}
+obj['age'] = 50
+50
+obj
+{name: "John", age: 50}
+obj.age
+50
+obj.name
+"John"
+
+<button onclick =" myFunction() ">Click me.</button>

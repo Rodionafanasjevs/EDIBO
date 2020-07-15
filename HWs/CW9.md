@@ -11,3 +11,11 @@ export NVM_DIR="$HOME/.nvm" && (
 ) && \. "$NVM_DIR/nvm.sh"
 
 nvm i 12
+
+Frontends - clock, nor.life
+
+Backends - serviss
+
+Dev, 
+
+Qa - Manuali

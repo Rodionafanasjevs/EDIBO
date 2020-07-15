@@ -9,4 +9,4 @@ Mans pirmais ieraksts!
 
 [Javascriptweekly](https://javascriptweekly.com/)
 
-[JS]https://www.youtube.com/watch?v=xq13wiqvcTc
+[JS](https://www.youtube.com/watch?v=xq13wiqvcTc)

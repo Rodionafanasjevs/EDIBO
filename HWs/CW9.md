@@ -1,3 +1,5 @@
+# NPM
+
 export NVM_DIR="$HOME/.nvm" && (
 
  git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"

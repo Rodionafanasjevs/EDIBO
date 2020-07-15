@@ -6,4 +6,4 @@
 
 [HTML](https://www.w3schools.com/html/html_links.asp)
 
-[Chartjs]https://www.chartjs.org/docs/latest/general/colors.html
+[Chartjs](https://www.chartjs.org/docs/latest/general/colors.html)

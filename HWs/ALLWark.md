@@ -1050,7 +1050,7 @@ CI/CD
 [validator](https://validator.w3.org/)
 
 
-  * JS
+  # JS
 
 <!DOCTYPE html>
 
@@ -1068,7 +1068,7 @@ CI/CD
 
 <body>
 
-  * <h1>Scooby dooby doo</h1>
+  * <h>Scooby dooby doo</h>
 
 <script>
 
@@ -1113,7 +1113,7 @@ this.innerText = new Date();
 
 <body>
   
-   * <h1>Hello</h1>
+   * <h>Hello</h>
     
     <script>
        

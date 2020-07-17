@@ -353,7 +353,7 @@ df | egrep sda2
 
   * Grep так же может запросто подсчитать количество совпадений:
 
-# ifconfig | grep –c inet6
+ifconfig | grep –c inet6
 
   * Egrep — это еще одна производная, которая означает «Расширенное глобальное
 регулярное выражение».
@@ -362,7 +362,7 @@ df | egrep sda2
 
   * Fgrep ищет файл или список файлов для фиксированной строки шаблона. Это то же самое, что и grep -F. Обычный способ использовать fgrep — передать ему файл шаблонов:
 
-# fgrep –f file_full_of_patterns.txt file_to_search.txt
+fgrep –f file_full_of_patterns.txt file_to_search.txt
 
 man grep – помогает найти комбинации
 
@@ -679,3 +679,49 @@ some any
     • https://ankiweb.net/shared/info/1557429385(https://ankiweb.net/shared/info/1557429385)
     • https://ankiweb.net/shared/info/553269875(https://ankiweb.net/shared/info/553269875)
 
+---
+
+# PYTHON
+
+#! usr/bin/python3.6
+
+print(5 + 10)
+
+print(3 * 7, (17 - 2) * 8)
+
+a = input()
+
+b = input()
+
+s = a + b
+
+print(s)
+
+  * Moduls
+
+x = int(input())
+
+if x > 0:
+   
+   print(x)
+
+else:
+   
+   print(-x)
+
+x = int(input())
+
+y = int(input())
+
+if x > 0:
+   
+   if y > 0:    TAB
+      
+      print("Первая четверть")
+    else:      
+        print("Четвертая четверть")
+    else:
+    if y > 0:         
+        print("Вторая четверть")
+    else:                  
+        print("Третья четверть")

@@ -466,3 +466,22 @@ cat 2.txt
 
 splot "2.txt"
 
+Allwork(Gnuplot1)
+
+  * plot "2.txt"
+
+Allwork(Gnuplot2)
+
+  * plot "2.txt" u 4:4, "2.txt" u 1:4 w l
+
+Allwork(Gnuplot3)
+
+  * plot "2.txt" u 4:4, "2.txt" u 2:4 w l
+
+Allwork(Gnuplot4)
+
+  * set polar
+
+plot cos(2*t) with lines lt 7 dt 3 lw 3 ,sin(4*t) lt 12 lw 3\
+
+Allwork(Gnuplot5)

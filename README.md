@@ -12,3 +12,5 @@ Mans pirmais ieraksts!
 [JS](https://www.youtube.com/watch?v=xq13wiqvcTc)
 
 [React](https://stackblitz.com/)
+
+[app.netlify](https://app.netlify.com/teams/rodionafanasjevs/sites)

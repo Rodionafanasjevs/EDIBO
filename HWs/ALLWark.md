@@ -355,4 +355,114 @@ df | egrep sda2
 
 # ifconfig | grep –c inet6
 
+  * Egrep — это еще одна производная, которая означает «Расширенное глобальное
+регулярное выражение».
+
+  * Egrep очень полезен для поиска исходных файлов и других частей кода, если возникнет такая необходимость. Она может быть вызвана из регулярного grep, указав параметр -E.
+
+  * Fgrep ищет файл или список файлов для фиксированной строки шаблона. Это то же самое, что и grep -F. Обычный способ использовать fgrep — передать ему файл шаблонов:
+
+# fgrep –f file_full_of_patterns.txt file_to_search.txt
+
+man grep – помогает найти комбинации
+
+Sed - потоковый редактор и конечный редактор (неинтерактивный текстовый редактор) для автоматического изменения файлов. 
+
+df --output=pcent /dev/sda2
+
+stringl=$(df -h | egrep sda2)
+
+sda="$(echo $string1|cut -d" " -f5)"
+
+sda="$(echo $stringl |cut -d" " -f5)"
+
+echo $sda
+
+  * sda="$(echo $stringl |cut -d" " -f5)"
+
+df -h
+
+  * sda=$(df -h | egrep sda2)
+
+num1="$(echo $sda |cut -d" " -f2)"
+
+echo $num1
+
+99G
+
+  * sda=$(df | egrep sda2)
+
+num1="$(echo $sda |cut -d" " -f2)"
+
+num2="$(echo $sda |cut -d" " -f3)"
+
+echo $num1 $num2
+
+103292152 66612096
+
+  * num2="$(echo $sda |cut -d" " -f3)"
+
+num1="$(echo $sda |cut -d" " -f3)"
+
+num2="$(echo $sda |cut -d" " -f4)"
+
+echo $(($num1 / $num2))
+
+2 
+
+  * df -h |egrep sda2 | awk '{print ($3)/$2*100 "%"}'\
+
+df -k /home | awk '{ print $5 }'|grep %|cut -d% -f 1
+
+df /home/|tr -s ' ' |cut -d' ' -f5|tail -n1
+
+df /home | awk '{ print $5 }' | sed 's/|//'
+
+$ bc <<<" scale=4; (($a/$b)*100)"
+
+68%
+
+  * System observation interval - 1 sec.
+    
+    1. Input - df command
+    2. Output - Data files: 02.dat and 03.dat
+    3. Observation length
+        1. - 1 min. (02.dat)
+        2. - forever (03.dat)
+
+echo `awk "BEGIN {printf\"%.2f\n\",66290508/103292152*100}"`"%"
+
+  * #! /bin/bash
+
+b=$(df --output=size /dev/sda2 | tail -n 1)
+
+c=$(df --output=avail /dev/sda2 | tail -n 1) d=$(((b-c)*100/b))
+
+while sleep 1; do echo `date`; echo $d | tee -a 02.dat ; done
+
+# DAY 5 -  Gnuplot
+
+ctrl d and exit
+
+touch 1.sh
+
+vim 1.sh
+
+  * #! bin/bash/
+
+echo > 2.txt
+
+for i in {0..1000};
+
+do echo $((i)) $((i*i)) $((i*i*3)) >> 2.txt;
+
+done
+
+ * touch 2.txt
+
+bash 1.sh
+
+cat 2.txt
+
+splot "2.txt"
 

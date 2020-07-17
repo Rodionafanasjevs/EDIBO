@@ -731,8 +731,6 @@ if x > 0:
 
 Меньше — условие верно, если первый операнд меньше второго.
 
-  * >
-
 
 Больше — условие верно, если первый операнд больше второго.
 
@@ -899,3 +897,272 @@ idle & (opens python prompt or smthing)
 ---
 
 # for i in range
+
+for i in range(9): print(i)
+
+1...10
+
+for i in range(9): print(i,i)
+
+1...8
+
+1...8
+
+  * for i in range(4,9): print(i,i*i)
+
+4 16, 5 25, 6 36, 7 49, 8 64
+
+for i in range(-4,9): print(i,i*i)
+
+-4 16, -3 9, -2 4, -1 1, 0 0, 1 1, 2 4, 3 9
+
+for i in range(-4,5): print('11') ; print('A')
+
+11 A
+
+11 A
+
+for i in range(4):
+  
+  print("",i,"",end='')
+
+0  1  2  3 
+
+  * for i in range(5):
+    
+    print(i)
+    
+    print(i*i)
+    print("hi")
+
+0 0 hi, 1  1 hi, 2 4 hi,  3 9…
+
+  * t = "Summa = %s"%(22)
+
+t = "Summa = %s"%(33)
+
+t = "Summa = %s"%(2,'EUR')
+
+t = "Summa = %s"%(2,'EUR' )
+
+t = "Summa = %s, valuta=%s"%(2,'EUR' )
+
+t = "Summa = %s, valuta=%s, Janka = %s"%(2,'EUR',777 )
+
+  * s = """
+
+Godajamais x,
+
+Jums ir pienacis naudas parvedums
+
+ar vertibu y EUR
+
+Lai sanemtu naudu, atsutit
+
+iszinu ux telf. numuru z
+
+Ciena,
+
+atraitne
+
+"""\
+
+ * print("Hello")
+
+f()
+
+def f(x):
+
+print("Hello"+11)
+
+f(11)
+
+def f(x):
+
+print("Hello"+str11))
+
+def f(x):
+
+print("Hello"+str(11))
+
+f(x)
+
+def f(x):
+
+print("Hello "+str(11)+" "+ x)
+
+f('EDIBO')
+
+f(22)
+
+def f(x):
+
+x = str(x)
+
+print("Hello "+str(11)+" "+ x)
+
+f(11)
+
+f(22)
+
+f('RTU')
+
+f = open("a.dat" , "w") – creat new file
+
+---
+
+# Dotnet
+
+HTML → C# → PHP → SQ
+ 
+export NVM_DIR="$HOME/.nvm" && (
+ 
+   * git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
+ 
+ cd "$NVM_DIR"
+ 
+ git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
+
+) && \. "$NVM_DIR/nvm.sh"
+
+nvm i 12
+
+  * Frontends - clock, nor.life
+
+Backends - serviss
+
+Qa – Manuali
+
+Hybridapps
+
+Unittest — наверное самый известный фреймворк для написания тестов в Python. Он очень прост в освоении и его легко начать использовать в вашем проекте.
+
+Polyfills – в веб-программировании это код, реализующий какую-либо функциональность, которая не поддерживается в некоторых версиях веб-браузеров. Обычно представляет собой библиотеку JavaScript, которая реализует поддержку веб-стандарта HTML5 в версиях браузеров, где поддержка этих функций частично или полностью отсутствует. Это обеспечивает более или менее единообразное отображение веб-страниц в разных веб-браузерах
+
+$(“H1”).text
+
+Vanillajs
+
+Regex
+
+CI/CD
+
+[validator](https://validator.w3.org/)
+
+
+  * JS
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=, initial-scale=1.0">
+
+<title>Document</title>
+
+</head>
+
+<body>
+
+<h1>Scooby dooby doo</h1>
+
+<script>
+
+class TodayDateComponent extends HTMLElement {
+
+constructor(){
+
+super();
+
+SetInterval(() => {
+
+this.innerText = new Date();
+
+}, 1000);
+
+}
+
+}
+
+  * const comp = customElements.define('today-date', TodayDateComponent);
+
+</script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   
+   <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Document</title>
+
+</head>
+
+<body>
+  
+  <h1>Hello</h1>
+    
+    <script>
+       
+       const a = document.querySelector('h1')
+        a.addEventListener('click', () => alert('Hi,Rodion'))
+    </script>
+
+</body>
+
+</html>
+    
+  * <!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   
+   <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <title>Document</title>
+
+</head>
+
+<body>
+    
+    <today-date>Yes</today-date>
+    
+    <script>
+       // recepte Omlete izskatasPec Edina {
+           //     constructor(confuguration){}
+            //        this.color="green";
+            //    }
+         //   }
+        //var o = new Omlete();
+        //o.color = "green";
+            //}
+        class TodayDateComponent extends HTMLElement {
+            constructor(){
+                super();
+                this.innerText=new Date();
+
+            }
+        }
+
+        const comp = customElements.define('today-date', TodayDateComponent);
+    </script>
+
+</body>
+
+</html>

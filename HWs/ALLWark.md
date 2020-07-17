@@ -485,3 +485,108 @@ Allwork(Gnuplot4)
 plot cos(2*t) with lines lt 7 dt 3 lw 3 ,sin(4*t) lt 12 lw 3\
 
 Allwork(Gnuplot5)
+
+---
+
+# DAY 6 - 9
+
+  * sk bin hex
+  
+0 0000 0
+
+1 0001 1
+
+2 0010 2
+
+3 0011 3
+
+4 0100 4
+
+5 0101 5
+
+6 0110 6
+
+7 0111 7
+
+8 1000 8
+
+9 1001 9
+
+10 1010 A
+
+  * # binary.sh
+
+  * # https://stackoverflow.com/questions/10822790/can-i-call-a-function-of-a-shell-script-from-another-shell-script
+
+function convert () # (Val Base)
+
+{
+ 
+ val=$1
+ 
+ base=$2
+ 
+ result=""
+  
+  while [ $val -ne 0 ] ; do
+ 
+ result=$(( $val % $base ))$result #residual is next digit
+  
+  val=$(( $val / $base ))
+ 
+ done
+  
+  echo -n $result
+
+}
+
+  * # or
+
+  * # binary2.sh
+
+  * # https://unix.stackexchange.com/questions/223338/convert-a-value-into-a-binary-number-in-a-shell-script
+
+toBinary(){
+   
+   local n bit
+    
+    for (( n=$1 ; n>0 ; n >>= 1 ));
+    
+    do  bit="$(( n&1 ))$bit"; done
+    
+    printf "%s\n" "$bit"
+
+}
+
+  * # terminal
+
+source binary.sh
+
+convert 64 2 (convert=function from binary.sh, 64=val, 2=base)
+
+---
+
+Task:
+
+Create a BASH script ready to convert WHOLE DECIMAL NUMBER as input into BINARY NUMBER on the terminal output.
+
+Restrictions: only native BASH variables-related, conditional, and loopwise operations allowed.
+
+Only allowed math construction is like
+
+---
+
+file1:
+
+#! /bin/bash
+
+echo $1 $2
+
+
+terminal:
+
+./file1 some any -> to execute 
+
+output:
+
+some any

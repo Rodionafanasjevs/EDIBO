@@ -514,9 +514,9 @@ Allwork(Gnuplot5)
 
 10 1010 A
 
-  * # binary.sh
+binary.sh
 
-  * # https://stackoverflow.com/questions/10822790/can-i-call-a-function-of-a-shell-script-from-another-shell-script
+[stackoverflow](https://stackoverflow.com/questions/10822790/can-i-call-a-function-of-a-shell-script-from-another-shell-script)
 
 function convert () # (Val Base)
 
@@ -540,11 +540,11 @@ function convert () # (Val Base)
 
 }
 
-  * # or
+or
 
-  * # binary2.sh
+binary2.sh
 
-  * # https://unix.stackexchange.com/questions/223338/convert-a-value-into-a-binary-number-in-a-shell-script
+[stackexchange](https://unix.stackexchange.com/questions/223338/convert-a-value-into-a-binary-number-in-a-shell-script)
 
 toBinary(){
    
@@ -619,24 +619,20 @@ some any
     • j - move caret on the next line. j$ - move caret to the end of next line
     • w - next word
     • e - next word's end
-
-  * d (delete) [operator] object
     
+    d (delete) [operator] object
     • d - delete line. D - delete line starting of caret place
-    
     • dw - delete word with space
-    
     • d[1..N]w - delete N words
     • de - delete word without space
     • d^ - delete text from the start line to the caret
     • d& - delete text from caret to the end of the line
     • dd - delete line (save to the buffer)
     • [1..N]dd - delete N lines
-
-  * c (replace) [N] + c + object or c + [N] object
-  
-  • ce - cut the end of word and switch on the INSERT mode
-  • c + [w/e/^/&]
+    
+    c (replace) [N] + c + object or c + [N] object
+    • ce - cut the end of word and switch on the INSERT mode
+    • c + [w/e/^/&]
   
                          * Comands in normal mode:
     • :q! - exit without saves
@@ -664,8 +660,7 @@ some any
     • :%s/было/стало/gc - for change 'was' to 'became' inside entire file.
                
                  * Set Proporties:
-
-: set command_name \c - command only for one searching
+    : set command_name \c - command only for one searching
     
     • :set ic - ignore text case. :set noic - set case
     • :set hls is - hlsearch and incsearch - searching highlights. :nohlsearch - no hightlights

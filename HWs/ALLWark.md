@@ -1114,11 +1114,13 @@ this.innerText = new Date();
   
    * <h>Hello</h>
     
-    <script>
+   <script>
        
-       const a = document.querySelector('h1')
-        a.addEventListener('click', () => alert('Hi,Rodion'))
-    </script>
+ const a = document.querySelector('h1')
+      
+  a.addEventListener('click', () => alert('Hi,Rodion'))
+    
+  </script>
 
 </body>
 
@@ -1132,7 +1134,7 @@ this.innerText = new Date();
    
    <meta charset="UTF-8">
     
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
    <title>Document</title>
 

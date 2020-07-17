@@ -755,3 +755,147 @@ if x > 0:
 
 
 Неравенство. Условие верно, если два операнда неравны.
+ 
+ ---
+ 
+a = int(input())
+
+b = int(input())
+
+if a % 10 == 0 or b % 10 == 0:
+    
+    print('YES')
+
+else:
+   
+   print('NO')
+   
+   ---
+ 
+# Функция
+
+int(x) - Округляет число в сторону нуля. Это стандартная функция, для ее использования не нужно подключать модуль math.
+
+round(x) - Округляет число до ближайшего целого. Если дробная часть числа равна 0.5, то число округляется до ближайшего четного числа.
+
+round(x, n) - Округляет число x до n знаков после точки. Это стандартная функция, для ее использования не нужно подключать модуль math.
+
+floor(x) - Округляет число вниз («пол»), при этом floor(1.5) == 1, floor(-1.5) == -2
+
+ceil(x) - Округляет число вверх («потолок»), при этом ceil(1.5) == 2, ceil(-1.5) == -1
+
+abs(x) - Модуль (абсолютная величина). Это — стандартная функция. Корни, логарифмы
+
+sqrt(x) - Квадратный корень. Использование: sqrt(x)
+
+log(x) - Натуральный логарифм. При вызове в виде log(x, b) возвращает логарифм по основанию b.
+
+e - Основание натуральных логарифмов e = 2,71828...
+
+  * #! /usr/bin/python3.8
+
+def name():
+	
+ x = int(input('Input number below, please:\n'))
+	
+ print('Your number is:', x)
+
+name()
+
+---
+
+# Github
+
+mkdir DT4
+
+cd DT4
+
+ls
+
+pwd
+
+git init
+
+git remote -v
+
+git pull origin master
+
+touch DT_Rodion.txt
+
+vim DT_Rodion.txt
+
+git add .
+
+git commit -m "Rodion commit"
+
+git config --global user.email "rodionafanasjevs@gmail.com"
+
+git config --global user.name "Rodionafanasjevs"
+
+git commit -m "Rodion commit"
+
+git push origin master
+
+# Python
+
+printf 1 | hedump -x
+
+printf 12 | hexdump -x
+
+printf 120 | hd -x
+
+printf AbC | hd -v
+
+pwd
+
+  * ./Python_work_DAY2.py
+
+chmod +x Python_work_DAY2.py
+
+./Python_work_DAY2.py
+
+#! /usr/bin/python
+
+for i in [1,100,'o']:
+    
+    print(i)
+    
+  * curl google.com
+
+curl google.com | hexdum |less
+
+dir(a) what you can do with this variable
+
+a.reverse() (reverses the list)
+
+a.sort() (sorts list by numerical values)
+
+a.sort(reverse=True) (sorts the list in reverse(from highest to lowest))
+
+a = {"ābols":"apple"} ({} dictionary)
+
+a["ābols"] (shows apple)
+
+a.update({"bumbieris":"pear"})
+
+a.pop("ābols")
+
+python -m http.server = launches python so you can view you directories (127.0.0.1:8000 or localhost:8000 - firefox) or (curl 127.0.0.1:8000 - bash)
+
+vars() = shows all variables available
+
+type(a) (shows what type is a (for example a = 1 is integer or a = 1.2 is float))
+
+a.__ doc__
+
+a.pop.__ doc__ (shows documentation about pop)
+
+print(a.__ doc__)
+
+a[0] (index shows first number)
+
+idle & (opens python prompt or smthing)
+
+---
+
+# for i in range

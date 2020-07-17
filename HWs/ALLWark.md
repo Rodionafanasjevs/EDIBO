@@ -1112,7 +1112,7 @@ this.innerText = new Date();
 
 <body>
   
-   * <h>Hello</h>
+<h>Hello</h>
     
    <script>
        
@@ -1126,7 +1126,7 @@ this.innerText = new Date();
 
 </html>
     
-  * <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 

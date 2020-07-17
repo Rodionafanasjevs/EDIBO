@@ -10,3 +10,5 @@ Mans pirmais ieraksts!
 [Javascriptweekly](https://javascriptweekly.com/)
 
 [JS](https://www.youtube.com/watch?v=xq13wiqvcTc)
+
+[React](https://stackblitz.com/)

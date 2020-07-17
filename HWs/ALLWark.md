@@ -582,7 +582,6 @@ file1:
 
 echo $1 $2
 
-
 terminal:
 
 ./file1 some any -> to execute 
@@ -1068,7 +1067,7 @@ CI/CD
 
 <body>
 
-  * <h>Scooby dooby doo</h>
+    * <h>Scooby dooby doo</h>
 
 <script>
 

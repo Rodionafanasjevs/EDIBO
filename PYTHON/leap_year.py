@@ -8,14 +8,14 @@
   * остальные годы, номер которых кратен 100, — невисокосные (например, го­ды 1700, 1800, 1900, 2100);
   * остальные годы, номер которых кратен 4, — високосные
 
-# Cheet:
+# Сheat:
 
 for leap_year in range(4,3000,4):
 print(leap_year)
 
 ___
 
-# Correct poth:
+# Correct path:
 
 while True:
     n = int(input("leap_year: "))

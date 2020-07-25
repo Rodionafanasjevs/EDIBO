@@ -14,3 +14,5 @@ Mans pirmais ieraksts!
 [React](https://stackblitz.com/)
 
 [app.netlify](https://app.netlify.com/teams/rodionafanasjevs/sites)
+
+[My site html & css](https://rodionafanasjevs.github.io/Lorem_Ipsum/)

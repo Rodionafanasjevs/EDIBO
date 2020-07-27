@@ -9,3 +9,239 @@
   * DROP TABLE - удаляет таблицу
   * CREATE INDEX - создает индекс (ключ поиска)
   * DROP INDEX - удаляет индекс
+
+# SELECT
+
+SELECT column1, column2, ... or all: SELECT * FROM table_name;
+
+FROM table_name;
+
+SQL выбирает столбцы «CustomerName» и «City» из таблицы «Customers»:
+
+SELECT CustomerName, City FROM Customers;  or SELECT CustomerName, City FROM Customers;
+
+---
+
+# SELECT DISTINCT - используется для возврата только различных (разных) значений.
+
+SELECT DISTINCT column1, column2, ...
+FROM table_name;
+
+SELECT DISTINCT Country FROM Customers;
+
+SELECT COUNT(DISTINCT Country) FROM Customers; - SQL перечисляет количество разных (разных) стран-клиентов
+
+обходной путь для MS Access:
+
+SELECT Count(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
+
+# WHERE используется для фильтрации записей.
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+SQL выбирает всех клиентов из страны «Мексика» в таблице «Клиенты»:
+SELECT * FROM Customers
+WHERE Country='Mexico';
+
+SQL требует одинарных кавычек вокруг текстовых значений
+SELECT * FROM Customers
+WHERE CustomerID=1;
+
+# AND, OR и NOT
+AND и OR используются для фильтрации записей на основе более чем одного условия:
+
+  * Оператор И отображает запись, если все условия, разделенные И, ИСТИНА.
+  * Оператор ИЛИ отображает запись, если любое из условий, разделенных ИЛИ, имеет значение ИСТИНА.
+  * Оператор NOT отображает запись, если условие (условия) НЕ ИСТИННО.
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition1 AND condition2 AND condition3 ...;
+or
+WHERE condition1 OR condition2 OR condition3 ...;
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE NOT condition;
+
+# ORDER BY - используется для сортировки набора результатов в порядке возрастания или убывания.
+
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+ORDER BY DESC
+выбирает всех клиентов из таблицы «Клиенты», отсортированных по убыванию по столбцу «Страна»:
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+SQL выбирает всех клиентов из таблицы «Клиенты», отсортированные по возрастанию по «Страна» и по убыванию по столбцу «Имя клиента»:
+
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+---
+
+# INSERT INTO используется для вставки новых записей в таблицу.
+
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+SQL вставляет новую запись в таблицу «Клиенты»:
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+
+# NULL является полем без значения
+
+IS NULL и IS NOT NULL.
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
+IS NOT NULL используется для проверки непустых значений
+
+# UPDATE
+используется для изменения существующих записей в таблице.
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+Это предложение WHERE, которое определяет, сколько записей будет обновлено.
+Следующий оператор SQL изменит имя контакта на «Juan» для всех записей, где страна «Мексика»:
+
+UPDATE Customers
+SET ContactName='Juan'
+WHERE Country='Mexico';
+
+UPDATE Customers
+SET ContactName='Juan';
+
+# SQL DELETE
+
+DELETE FROM table_name WHERE condition;
+
+DELETE FROM table_name;
+
+# SQL SELECT TOP
+используется для указания количества возвращаемых записей.
+
+Синтаксис SQL Server / MS Access:
+
+SELECT TOP number|percent column_name(s)
+FROM table_name
+WHERE condition;
+Синтаксис MySQL:
+
+SELECT column_name(s)
+
+FROM table_name
+WHERE condition
+LIMIT number;
+
+Синтаксис Oracle:
+
+SELECT column_name(s)
+FROM table_name
+WHERE ROWNUM <= number;
+
+SQL TOP, LIMIT и ROWNUM
+
+SQL выбирает первые три записи из таблицы «Клиенты» (для SQL Server / MS Access):
+SELECT TOP 3 * FROM Customers;
+
+SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
+SELECT * FROM Customers
+LIMIT 3;
+
+SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
+SELECT * FROM Customers
+WHERE ROWNUM <= 3;
+
+SQL выбирает первые 50% записей из таблицы «Клиенты» (для SQL Server / MS Access):
+SELECT TOP 50 PERCENT * FROM Customers;
+
+SQL выбирает первые три записи из таблицы «Клиенты», где страна - «Германия» (для SQL Server / MS Access):
+SELECT TOP 3 * FROM Customers
+WHERE Country='Germany';
+
+SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
+SELECT * FROM Customers
+WHERE Country='Germany'
+LIMIT 3;
+
+SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
+SELECT * FROM Customers
+WHERE Country='Germany' AND ROWNUM <= 3;
+
+---
+
+# Функции SQL MIN () и MAX ()
+
+Функция MIN () возвращает наименьшее значение из выбранного столбца.
+SELECT MIN(column_name)
+FROM table_name
+WHERE condition;
+
+Функция MAX () возвращает наибольшее значение выбранного столбца.
+SELECT MAX(column_name)
+FROM table_name
+WHERE condition;
+
+SQL находит цену самого дешевого продукта:
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+SQL находит цену самого дорогого продукта:
+SELECT MAX(Price) AS LargestPrice
+FROM Products;
+
+---
+
+# Функции SQL COUNT (), AVG () и SUM ()
+
+Функция COUNT () возвращает количество строк, которое соответствует указанному критерию.
+SELECT COUNT(column_name)
+FROM table_name
+WHERE condition;
+
+Функция AVG () возвращает среднее значение числового столбца.
+SELECT AVG(column_name)
+FROM table_name
+WHERE condition;
+
+Функция SUM () возвращает общую сумму числового столбца.
+SELECT SUM(column_name)
+FROM table_name
+WHERE condition;
+
+SQL находит количество продуктов:
+SELECT COUNT(ProductID)
+FROM Products;
+
+SQL находит среднюю цену всех продуктов:
+SELECT AVG(Price)
+FROM Products;
+
+SQL находит сумму полей «Количество» в таблице «OrderDetails»:
+SELECT SUM(Quantity)
+FROM OrderDetails;
+
+---
+
+# SQL LIKE
+используется в предложении WHERE для поиска указанного шаблона в столбце.
+% - знак процента представляет ноль, один или несколько символов
+_ - Подчеркивание представляет один символ
+
+SELECT column1, column2, ...
+FROM table_name
+WHERE columnN LIKE pattern;

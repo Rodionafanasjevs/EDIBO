@@ -16,7 +16,7 @@ SELECT column1, column2, ... or all: SELECT * FROM table_name;
 
 FROM table_name;
 
-SQL выбирает столбцы «CustomerName» и «City» из таблицы «Customers»:
+  * SQL выбирает столбцы «CustomerName» и «City» из таблицы «Customers»:
 
 SELECT CustomerName, City FROM Customers;  or SELECT CustomerName, City FROM Customers;
 
@@ -42,7 +42,7 @@ SELECT column1, column2, ...
 FROM table_name
 WHERE condition;
 
-SQL выбирает всех клиентов из страны «Мексика» в таблице «Клиенты»:
+  * SQL выбирает всех клиентов из страны «Мексика» в таблице «Клиенты»:
 SELECT * FROM Customers
 WHERE Country='Mexico';
 
@@ -79,7 +79,7 @@ ORDER BY DESC
 SELECT * FROM Customers
 ORDER BY Country DESC;
 
-SQL выбирает всех клиентов из таблицы «Клиенты», отсортированные по возрастанию по «Страна» и по убыванию по столбцу «Имя клиента»:
+  * SQL выбирает всех клиентов из таблицы «Клиенты», отсортированные по возрастанию по «Страна» и по убыванию по столбцу «Имя клиента»:
 
 SELECT * FROM Customers
 ORDER BY Country ASC, CustomerName DESC;
@@ -91,7 +91,7 @@ ORDER BY Country ASC, CustomerName DESC;
 INSERT INTO table_name (column1, column2, column3, ...)
 VALUES (value1, value2, value3, ...);
 
-SQL вставляет новую запись в таблицу «Клиенты»:
+  * SQL вставляет новую запись в таблицу «Клиенты»:
 INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
 VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
 
@@ -141,44 +141,46 @@ FROM table_name
 WHERE condition;
 Синтаксис MySQL:
 
-SELECT column_name(s)
+  * SELECT column_name(s)
 
 FROM table_name
 WHERE condition
 LIMIT number;
 
-Синтаксис Oracle:
+  * Синтаксис Oracle:
 
 SELECT column_name(s)
 FROM table_name
 WHERE ROWNUM <= number;
 
-SQL TOP, LIMIT и ROWNUM
+---
 
-SQL выбирает первые три записи из таблицы «Клиенты» (для SQL Server / MS Access):
+# SQL TOP, LIMIT и ROWNUM
+
+  * SQL выбирает первые три записи из таблицы «Клиенты» (для SQL Server / MS Access):
 SELECT TOP 3 * FROM Customers;
 
-SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
+  * SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
 SELECT * FROM Customers
 LIMIT 3;
 
-SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
+  * SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
 SELECT * FROM Customers
 WHERE ROWNUM <= 3;
 
-SQL выбирает первые 50% записей из таблицы «Клиенты» (для SQL Server / MS Access):
+  * SQL выбирает первые 50% записей из таблицы «Клиенты» (для SQL Server / MS Access):
 SELECT TOP 50 PERCENT * FROM Customers;
 
-SQL выбирает первые три записи из таблицы «Клиенты», где страна - «Германия» (для SQL Server / MS Access):
+  * SQL выбирает первые три записи из таблицы «Клиенты», где страна - «Германия» (для SQL Server / MS Access):
 SELECT TOP 3 * FROM Customers
 WHERE Country='Germany';
 
-SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
+  * SQL показывает эквивалентный пример с использованием предложения LIMIT (для MySQL):
 SELECT * FROM Customers
 WHERE Country='Germany'
 LIMIT 3;
 
-SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
+  * SQL показывает эквивалентный пример с использованием ROWNUM (для Oracle):
 SELECT * FROM Customers
 WHERE Country='Germany' AND ROWNUM <= 3;
 
@@ -186,21 +188,21 @@ WHERE Country='Germany' AND ROWNUM <= 3;
 
 # Функции SQL MIN () и MAX ()
 
-Функция MIN () возвращает наименьшее значение из выбранного столбца.
+  * Функция MIN () возвращает наименьшее значение из выбранного столбца.
 SELECT MIN(column_name)
 FROM table_name
 WHERE condition;
 
-Функция MAX () возвращает наибольшее значение выбранного столбца.
+  * Функция MAX () возвращает наибольшее значение выбранного столбца.
 SELECT MAX(column_name)
 FROM table_name
 WHERE condition;
 
-SQL находит цену самого дешевого продукта:
+  * SQL находит цену самого дешевого продукта:
 SELECT MIN(Price) AS SmallestPrice
 FROM Products;
 
-SQL находит цену самого дорогого продукта:
+  * SQL находит цену самого дорогого продукта:
 SELECT MAX(Price) AS LargestPrice
 FROM Products;
 
@@ -208,30 +210,30 @@ FROM Products;
 
 # Функции SQL COUNT (), AVG () и SUM ()
 
-Функция COUNT () возвращает количество строк, которое соответствует указанному критерию.
+  * Функция COUNT () возвращает количество строк, которое соответствует указанному критерию.
 SELECT COUNT(column_name)
 FROM table_name
 WHERE condition;
 
-Функция AVG () возвращает среднее значение числового столбца.
+  * Функция AVG () возвращает среднее значение числового столбца.
 SELECT AVG(column_name)
 FROM table_name
 WHERE condition;
 
-Функция SUM () возвращает общую сумму числового столбца.
+  * Функция SUM () возвращает общую сумму числового столбца.
 SELECT SUM(column_name)
 FROM table_name
 WHERE condition;
 
-SQL находит количество продуктов:
+  * SQL находит количество продуктов:
 SELECT COUNT(ProductID)
 FROM Products;
 
-SQL находит среднюю цену всех продуктов:
+  * SQL находит среднюю цену всех продуктов:
 SELECT AVG(Price)
 FROM Products;
 
-SQL находит сумму полей «Количество» в таблице «OrderDetails»:
+  * SQL находит сумму полей «Количество» в таблице «OrderDetails»:
 SELECT SUM(Quantity)
 FROM OrderDetails;
 
@@ -245,3 +247,301 @@ _ - Подчеркивание представляет один символ
 SELECT column1, column2, ...
 FROM table_name
 WHERE columnN LIKE pattern;
+
+  * SQL выбирает всех клиентов с именем CustomerName, начинающимся с «a»:
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a%';
+
+  * SQL выбирает всех клиентов с именем CustomerName, оканчивающимся на «a»:
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%a';
+
+  * SQL выбирает всех клиентов с CustomerName, которые имеют «или» в любой позиции:
+SELECT * FROM Customers
+WHERE CustomerName LIKE '%or%';
+
+  * SQL выбирает всех клиентов с CustomerName, у которых «r» находится на второй позиции:
+SELECT * FROM Customers
+WHERE CustomerName LIKE '_r%';
+
+  * SQL выбирает всех клиентов с именем CustomerName, которое начинается с «a» и имеет длину не менее 3 символов:
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'a__%';
+
+  * SQL выбирает всех клиентов с ContactName, который начинается с «a» и заканчивается «o»:
+SELECT * FROM Customers
+WHERE ContactName LIKE 'a%o';
+
+  * SQL выбирает всех клиентов с именем CustomerName, которое НЕ начинается с «a»:
+SELECT * FROM Customers
+WHERE CustomerName NOT LIKE 'a%';
+
+---
+
+# Подстановочные знаки SQL
+
+используется для замены одного или нескольких символов в строке.
+
+  * SQL выбирает всех клиентов с городом, начинающимся с «ber»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE 'ber%';
+
+  * SQL выбирает всех клиентов с городом, содержащим шаблон «es»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE '%es%';
+
+  * SQL выбирает всех клиентов с Городом, начинающимся с любого символа, за которым следует «ondon»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE '_ondon';
+
+  * SQL выбирает всех клиентов с Городом, начинающимся с «L», за которым следует любой символ, затем «n», затем любой символ и «on»:
+ 
+SELECT * FROM Customers
+
+WHERE City LIKE 'L_n_on';
+
+  * SQL выбирает всех клиентов с городом, начинающимся с «b», «s» или «p»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE '[bsp]%';
+
+  * SQL выбирает всех клиентов с городом, начинающимся с «a», «b» или «c»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE '[a-c]%';
+
+  * SQL выбирают всех клиентов с городом, НЕ начинающимся с «b», «s» или «p»:
+
+SELECT * FROM Customers
+
+WHERE City LIKE '[!bsp]%';
+
+---
+
+# SQL IN
+
+IN позволяет указать несколько значений в предложении WHERE.
+
+IN является сокращением для нескольких условий ИЛИ.
+
+SELECT column_name(s)
+
+FROM table_name
+
+WHERE column_name IN (value1, value2, ...);
+
+  * SQL выбирает всех клиентов, которые находятся в «Германии», «Франции» или «Великобритании»:
+
+SELECT * FROM Customers
+
+WHERE Country IN ('Germany', 'France', 'UK');
+
+  * SQL выбирает всех клиентов, которые НЕ находятся в «Германии», «Франции» или «Великобритании»:
+
+SELECT * FROM Customers
+
+WHERE Country NOT IN ('Germany', 'France', 'UK');
+
+  * SQL выбирает всех клиентов из тех же стран, что и поставщики:
+
+SELECT * FROM Customers
+
+WHERE Country IN (SELECT Country FROM Suppliers);
+
+---
+
+# SQL между оператором
+
+МЕЖДУ выбирает значения в заданном диапазоне. Значения могут быть числами, текстом или датами.
+
+BETWEEN является включающим: начальные и конечные значения включены. 
+
+SELECT column_name(s)
+
+FROM table_name
+
+WHERE column_name BETWEEN value1 AND value2;
+
+  * SQL выбирает все продукты с ценами между 10 и 20:
+
+SELECT * FROM Products
+
+WHERE Price BETWEEN 10 AND 20;
+
+  * Чтобы отобразить продукты за пределами диапазона предыдущего примера, используйте НЕ МЕЖДУ:
+
+SELECT * FROM Products
+
+WHERE Price NOT BETWEEN 10 AND 20;
+
+  * SQL выбирает все продукты с ценами между 10 и 20. Кроме того; не показывать продукты с CategoryID 1,2 или 3:
+
+SELECT * FROM Products
+
+WHERE Price BETWEEN 10 AND 20
+
+AND CategoryID NOT IN (1,2,3);
+
+  * SQL выбирает все продукты с ProductName МЕЖДУ Carnarvon Tigers и Моцареллой ди Джованни:
+
+SELECT * FROM Products
+
+WHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+
+ORDER BY ProductName;
+
+  * SQL выбирает все продукты с ProductName между Carnarvon Tigers и Cajun Seasoning от шеф-повара Антона:
+
+SELECT * FROM Products
+
+WHERE ProductName BETWEEN "Carnarvon Tigers" AND "Chef Anton's Cajun Seasoning"
+
+ORDER BY ProductName;
+
+  * SQL выбирает все продукты с ProductName НЕ МЕЖДУ Carnarvon Tigers и Mozzarella di Giovanni:
+
+SELECT * FROM Products
+
+WHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella di Giovanni'
+
+ORDER BY ProductName;
+
+  * SQL выбирает все заказы с OrderDate BETWEEN '01 -July-1996 'и '31 -July-1996':
+
+SELECT * FROM Orders
+
+WHERE OrderDate BETWEEN #01/07/1996# AND #31/07/1996#;
+
+---
+
+# Псевдонимы SQL
+
+  * SQL используются, чтобы дать таблице или столбцу в таблице временное имя.
+
+SELECT column_name AS alias_name
+
+FROM table_name;
+
+  * Синтаксис таблицы псевдонимов
+
+SELECT column_name(s)
+
+FROM table_name AS alias_name;
+
+  * SQL создает два псевдонима, один для столбца CustomerID и один для столбца CustomerName:
+
+SELECT CustomerID AS ID, CustomerName AS Customer
+
+FROM Customers;
+
+  * SQL создает два псевдонима, один для столбца CustomerName и один для столбца ContactName. 
+
+Примечание. Требуются двойные кавычки или квадратные скобки, если псевдоним содержит пробелы:
+
+SELECT CustomerName AS Customer, ContactName AS [Contact Person]
+
+FROM Customers;
+
+  * SQL создает псевдоним «Адрес», который объединяет четыре столбца (Address, PostalCode, City и Country):
+
+SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country AS Address
+
+FROM Customers;
+
+  * SQL работал выше в MySQL, используйте следующее:
+
+SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address
+
+FROM Customers;
+
+  * SQL выбирает все заказы от клиента с CustomerID = 4 (вокруг рога). Мы используем таблицы «Customers» и «Orders» и присваиваем им псевдонимы таблиц соответственно «c» и «o» 
+
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+
+FROM Customers AS c, Orders AS o
+
+WHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;
+
+  * SQL такой же, как и выше, но без псевдонимов:
+
+SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerName
+
+FROM Customers, Orders
+
+WHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;
+
+---
+
+# SQL JOIN
+
+JOIN используется для объединения строк из двух или более таблиц на основе связанного столбца между ними.
+
+SQL (которая содержит INNER JOIN), которая выбирает записи, имеющие совпадающие значения в обеих таблицах:
+
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+
+FROM Orders
+
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+  * Вот различные типы соединений в SQL:
+
+(INNER) JOIN : возвращает записи с совпадающими значениями в обеих таблицах
+
+LEFT (OUTER) JOIN : возвращает все записи из левой таблицы и сопоставленные записи из правой таблицы
+
+RIGHT (OUTER) JOIN : возвращает все записи из правой таблицы и сопоставленные записи из левой таблицы
+
+FULL (OUTER) JOIN : Возвращает все записи, когда есть совпадение в левой или правой таблице
+
+---
+
+# SQL INNER JOIN Ключевое слово
+
+SELECT column_name(s)
+
+FROM table1
+
+INNER JOIN table2
+
+ON table1.column_name = table2.column_name;
+
+  * SQL выбирает все заказы с информацией о клиенте:
+
+SELECT Orders.OrderID, Customers.CustomerName
+
+FROM Orders
+
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+  * SQL выбирает все заказы с информацией о клиенте и грузоотправителе:
+
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+
+FROM ((Orders
+
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+
+---
+
+# SQL LEFT JOIN Ключевое слово
+
+LEFT JOIN возвращает все записи из левой таблицы (table1) и соответствующие записи из правой таблицы (table2). Результат равен NULL с правой стороны, если совпадений нет.
+
+SELECT column_name(s)
+
+FROM table1
+
+LEFT JOIN table2
+
+ON table1.column_name = table2.column_name;

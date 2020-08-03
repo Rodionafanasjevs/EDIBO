@@ -52,5 +52,4 @@
    52  ./git-upload
    53  chmod 777 ./git-upload
    54  ./git-upload
-   55  history
-   56  history > hist.txt
+
